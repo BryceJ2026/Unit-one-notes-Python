@@ -47,3 +47,36 @@ five_times_three = multiply(6,7)
 print(five_times_three)
 # you can also call the functio directly in another
 print(multiply(1,67)) # funcs evaluated fromINSIDE to OUTSIDE
+
+# LiStS
+# ordered, mutable sequences
+empty_list = list()
+class_roster = ["Bryce", "Finny", "Jackson", "Kevin", "Maia", "Natalie", "Paige"]
+print(class_roster)
+
+
+# Indexes start at 0
+first_item = class_roster[0]
+print(first_item)
+
+#Update an item in a list, access by index
+class_roster[2] = "Jack"
+print(class_roster)
+
+lottery_nums = [13, 7, 89, 99, 67, 23, 4]
+print(sorted(lottery_nums, reverse=True))
+print(lottery_nums)#sorted() does not modify OG list
+#Sort IN PLACE -> modifies OG list
+lottery_nums.sort()
+print(lottery_nums)
+class_roster.sort(reverse=True)
+print(class_roster)
+
+#List operations
+class_roster.append("Alex")
+class_roster.insert(0, "Zoie")
+class_roster.remove("Zoie")
+class_roster.pop() #remove last item
+
+#Check if item exists in a list
+print(67 in lottery_num)
