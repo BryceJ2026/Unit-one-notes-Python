@@ -79,4 +79,44 @@ class_roster.remove("Zoie")
 class_roster.pop() #remove last item
 
 #Check if item exists in a list
-print(67 in lottery_num)
+print(67 in lottery_nums)
+
+# ***TUPLES***
+# immutable - can't change items
+# useful for "snapshot" of a row of data
+student = ('Bryce', 17, 'Neuroscience', 0.0)
+print(student)
+#student[3] = 2.6 CANT RE-ASSIGN ITEM!
+
+
+# *** SETS ***
+
+songs = {'Stranger', '3005', '7', '3', 'Mutt', 'Freeze', '3005'}
+print(songs)
+
+colors = ['blue', 'green', 'red', 'orange', 'purple', 'green', 'green']
+print(set(colors))
+#you can add/remove items
+songs.add('Gypsy')
+song.add('Stranger') # duplicate
+print(songs)
+
+# *** DICTIONARIES ***
+# mutable, but the KEYS can only be immutable types
+# { key: value } pairs Keys must be UNIQUE
+# unordered(No index, can't sort in place)
+characters = {'Aelin': 'Assasin queen',
+              'Karate Kid': 'pupil',
+              'Mr.Miyagi':'sensei',
+              'Phil Dunphy': 'Dad',
+              'WALL-E': 'robot',
+              'Princess Peach': 'damsel in distress',
+              'Dexter': 'Serial killer'
+              }
+print(len(characters))
+# dictionary with numerical keys, list values
+grade_requirements = {9:['Bio'],
+                    10:['Chem'],
+                     11:['Physics', 'Math', 'English', 'PE'],
+                      12:['Math', 'English', 'PE'] 
+                      }
