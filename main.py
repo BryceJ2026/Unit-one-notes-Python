@@ -98,7 +98,7 @@ colors = ['blue', 'green', 'red', 'orange', 'purple', 'green', 'green']
 print(set(colors))
 #you can add/remove items
 songs.add('Gypsy')
-song.add('Stranger') # duplicate
+songs.add('Stranger') # duplicate
 print(songs)
 
 # *** DICTIONARIES ***
@@ -120,3 +120,47 @@ grade_requirements = {9:['Bio'],
                      11:['Physics', 'Math', 'English', 'PE'],
                       12:['Math', 'English', 'PE'] 
                       }
+
+print(10 > 5)# True
+print(5 > 10)# False
+print(10<= 10)# True
+print(7<= 5)# False
+print(5 == 5) #True
+print(5 != 5)# False
+print('A' > 'b')# False
+print('cat' < 'cot') # o is GREATER because it comes later
+print('T'=='t') # False (casesensitive)
+print('T' < 't') # True, capital letters come first
+
+
+# Checking equality vs. identity
+list_a = (1,2,3)
+list_b = (1,2,3)
+print(list_a==list_b)
+print(list_a is list_b)
+# Typically only ise "is" when comparing to Nonoe, True, False
+boolean_a = True
+print(boolean_a is not False)
+
+#Compound boolean operators
+boolean_b = True
+boolean_c = False
+print(boolean_a and boolean_b)
+print(boolean_b and boolean_c)
+print(boolean_b or boolean_c)
+print(boolean_a and boolean_b or boolean_c)
+
+def can_drive(age):
+        if (age >= 17):
+             print('DRIVE DRIVE DRIVE')
+
+        elif (age == 16) :
+             print('PERMIT PERMIT PERMIT')
+
+        else:
+             print('DRIVE ANYWAYS HAHAHAHA')
+
+
+
+
+can_drive(14)
